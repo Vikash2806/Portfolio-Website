@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikash Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9d7bd33edd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!------------------This is header part nav bar at top---------------------------->
+    <div id="header" class="reveal-left fadeIn">
+      <div class="container"> <!-- .container class is applied here -->
+        background-image
+        <nav>
+          <img src="images/name logo.png" alt="logo" class="logo">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div> <!-- Make sure to close the .container here -->
+  
+      <video autoplay loop muted>
+        <source src="images/vig background.mp4" type="video/mp4">
+      </video>
+      <img src="images/me again.png" alt="Vikash image" class="face-image">
+
+      <div class="header-text">
+        <p> I am  <span id="typing-text"></span></p>
+        <h1>Hey, I'm <span>Vikash</span><br>from India</h1>
+      </div>
+
+
+    </div>
+
+    <!-------------------this is about --------------------------------------------->
+    <div id="about" class="reveal-left fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">            
+              <img src="images/my face blured.png" alt="Vikash">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me </h1>
+
+            <p>Hey there! I'm a skilled developer proficient in
+               Flutter for app development and HTML, CSS, and JS for
+                web development. Currently, I'm focused on honing my backend skills 
+                with the MERN stack. Passionate about creating seamless user experiences,
+                 I'm also diving into the realm of machine learning to enrich my projects 
+                 further. Let's build something incredible together! Innovation and user
+                  satisfaction drive me, and I'm always eager to embrace new challenges in
+                   the ever-evolving tech world.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links " onclick="opentab('experiences')">Experience</p>
+              <p class="tab-links " onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents-container">
+
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Flutter Developer / App Developer :</span><br>Building Android/IOS Apps</li>
+                  <li><span>Web Developer :</span><br>Web App Development</li>
+                  <li><span>Languages :</span><br>Java,C++,Python,Dart,SQL,MongoDB,HTML,CSS,JS</li>
+                  <li><span>Others :</span><br>Video Editing(Davinci Resolve)</li>
+                </ul>
+              </div>
+  
+              <div class="tab-contents" id="experiences">
+                <ul>
+                  <li><span>Gaining Experience 😉😉</span></li>
+                </ul>
+              </div>
+  
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>Btech Computer Science</span><br>SASTRA University</li>
+              
+                </ul>
+              </div>
+              <!-- Add all the tab contents here -->
+              <!-- Each tab content will have the class "tab-contents" and a unique id -->
+            </div>
+            
+          
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------this is services------------------------------------- -->
+
+    <div id="services" class="reveal-right fadeIn">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Web Development</h2>
+            <p>Passionate web developer proficient in HTML, CSS, and JavaScript. Eager to create engaging, user-friendly websites. 
+              Seeking opportunities to make a positive impact.
+               Let's build together!</p>
+               <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>App Development</h2>
+            <p>
+              Passionate Flutter app developer skilled in Dart. Eager to build innovative and user-friendly mobile applications. Seeking opportunities to contribute to app development projects and create
+               delightful user experiences. Let's build amazing apps together!</p>
+               <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Machine Learning</h2>
+            <p>
+              Learning🍉🍉</p>
+              <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!---------------------this is portfolio-------------------------------------->
+    <div id="portfolio" class="reveal-right fadeIn"">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/expense tracker.png" alt="Expense Tracker">
+            <div class="layer">
+              <h3>Expense Tracker app</h3>
+              <p>Expense tracker app built with Flutter for the UI and
+                 Hive local storage in the backend</p>
+              <a href="https://github.com/Vikash2806/Expense-Tracker.apk" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://drive.google.com/u/0/uc?id=1Qrrro34y_GKWJDdbIxflyXuktTQS7vme&export=download" target="_blank"><i class="fa-solid fa-download"></i></a>
+                
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Habit tracker.png" alt="Habit Tracker">
+            <div class="layer">
+              <h3>Habit Tracker app</h3>
+              <p>Habit tracker app built with Flutter for the UI and
+                 Hive local storage in the backend</p>
+              <a href="https://github.com/Vikash2806/Habit-Tracker.apk" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://drive.google.com/uc?export=download&id=1QycAPPf3023vCZqNEekGzbizN1i47T8k" target="_blank"><i class="fa-solid fa-download"></i></a>
+                
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/face recognition.jpg" alt="Face Recognition">
+            <div class="layer">
+              <h3>Face Recognition attendance</h3>
+              <p>This Python script uses `face_recognition` and `cv2` to recognize faces from live video, mark attendance, 
+                and save it in a CSV file with the current date.</p>
+              <a href="https://github.com/Vikash2806/Face-Attendance-Tracker" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+                
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/weather.jpg" alt="Face Recognition">
+            <div class="layer">
+              <h3>WeatherAPI Code</h3>
+              <p>This Python script retrieves and verbally presents current 
+                weather data for a city using
+                 WeatherAPI with `requests` and `win32com.client`.</p>
+              <a href="https://github.com/Vikash2806/WeatherAPI-WeatherSystem.py" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             
+                
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------this is contact----------------------------------------- -->
+    <div id="contact" class="reveal-left fadeIn">
+      <div class="container">                                                               
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope" style="color: #b37f0f;"></i><span>thecreweditz@gmail.com</span></p>
+              <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i><span>9080373654</span></p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/s-vikash-97b230260/" target="_blank"><i class="fa-brands fa-linkedin fa-beat-fade" style="color: #04368b;"></i></a>
+                <a href="https://github.com/Vikash2806" target="_blank"><i class="fa-brands fa-github fa-beat-fade" style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/v.i.k.a.s.h.28/" target="_blank"><i class="fa-brands fa-instagram fa-beat-fade" style="color: #ff0a6c;"></i></a>
+              </div>
+              <a href="images/latest REsume Vikash.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form action="" class="contact-form" id="contact-form" name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg">Heyy!!</span> 
+            </div>
+          </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © Vikash . Made with 🤍</p>
+      </div>
+    </div>
+
+    
+    
+    
+    <!---------JS--------->
+      <!-- -----script for the  about me part to display only the selected one---- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+     
+     // adding the functionality for the function we created:
+     function opentab(tabname) {
+     
+       //to remove all the previous display and lines
+       for (var link of tablinks) {
+         link.classList.remove("active-link"); 
+       }
+       for (var content of tabcontents) {
+         content.classList.remove("active-tab");
+       }
+       //to add the contents of the newly pressed tab and create the line:
+       event.currentTarget.classList.add("active-link");
+       var selectedTabContent = document.getElementById(tabname);
+       if (selectedTabContent) {
+         selectedTabContent.classList.add("active-tab");
+       }
+       
+     }
+     </script>
+     <!-- script for that dynamic typing heading -->
+     <script>
+      const typingTextElement = document.getElementById("typing-text");
+      const typingTexts = ["App Developer", "Web Developer"];
+    
+      let typingIndex = 0;
+      let characterIndex = 0;
+      let isDeleting = false;
+    
+      function typeText() {
+        const currentText = typingTexts[typingIndex];
+        if (isDeleting) {
+          typingTextElement.textContent = currentText.substring(0, characterIndex - 1);
+          characterIndex--;
+        } else {
+          typingTextElement.textContent = currentText.substring(0, characterIndex + 1);
+          characterIndex++;
+        }
+    
+        if (!isDeleting && characterIndex === currentText.length) {
+          isDeleting = true;
+        }
+    
+        if (isDeleting && characterIndex === 0) {
+          isDeleting = false;
+          typingIndex = (typingIndex + 1) % typingTexts.length;
+        }
+    
+        const typingSpeed = isDeleting ? 60 : 140; 
+        setTimeout(typeText, typingSpeed);
+      }
+    
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(typeText, 1000);
+      });
+    </script>
+    <!-- ------------script for fade in reveal------------- -->
+    <script>
+      const revealElements = document.querySelectorAll('.reveal-left, .reveal-right');
+    
+      const fadeInObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('left', 'right');
+          }
+        });
+      });
+    
+      revealElements.forEach((element) => {
+        fadeInObserver.observe(element);
+      });
+    </script>
+    <!-- -----------------------script for contact form--------------------- -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwt_J_i49WPRp1kBFCnS4Ae3-gvw5IhDYV5WppYDlNmCSbImEIeXm3R7Y0TylAxML4J_w/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully !!"
+            setTimeout(function() {
+              msg.innerHTML = " "
+
+            },5000)
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    </body>
+
+
+  
+</html>
