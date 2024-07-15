@@ -1,488 +1,488 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-  }
-    
-  body {
-    background: black;
-    color: rgb(252, 252, 252);
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
   
-  #header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    display: flex; /* Use flexbox to align navigation links */
-    justify-content: space-between; /* Spread navigation links evenly */
-    align-items: center; /* Center navigation links vertically */
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the navigation bar */
-    padding: 25px; /* Add padding around the navigation links for spacing */
-  }
-  
-  /* Style the logo */
-  .logo {
-    height: 60px;
-  }
-  
-  ul {
-    list-style: none;
-    display: flex; /* Use flexbox to create a horizontal layout for the navigation links */
-  }
+body {
+  background: black;
+  color: rgb(252, 252, 252);
+}
 
-  
-  li {
-    margin-right: 50px;
-  }
-  
-  li:last-child {
-    margin-right: 100px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    position: relative;
-    padding: 10px 15px;
-  }
-  nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left:0;
-    bottom:-6px;
-    transition: 0.4s;
-  }
-  
- /* Create the glowing effect */
+#header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex; /* Use flexbox to align navigation links */
+  justify-content: space-between; /* Spread navigation links evenly */
+  align-items: center; /* Center navigation links vertically */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the navigation bar */
+  padding: 25px; /* Add padding around the navigation links for spacing */
+}
+
+/* Style the logo */
+.logo {
+  height: 60px;
+}
+
+ul {
+  list-style: none;
+  display: flex; /* Use flexbox to create a horizontal layout for the navigation links */
+}
+
+
+li {
+  margin-right: 50px;
+}
+
+li:last-child {
+  margin-right: 100px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  padding: 10px 15px;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left:0;
+  bottom:-6px;
+  transition: 0.4s;
+}
+
+/* Create the glowing effect */
 /* Apply the glowing effect directly to the text on hover */
 nav ul li a:hover {
-    text-shadow: 0 0 10px rgba(255, 0, 79, 0.8), 
-                 0 0 20px rgba(255, 0, 79, 0.6), 
-                 0 0 30px rgba(255, 0, 79, 0.4), 
-                 0 0 40px rgba(255, 0, 79, 0.2); /* Multiple text-shadow layers for intensified glow */
-  }
+  text-shadow: 0 0 10px rgba(255, 0, 79, 0.8), 
+               0 0 20px rgba(255, 0, 79, 0.6), 
+               0 0 30px rgba(255, 0, 79, 0.4), 
+               0 0 40px rgba(255, 0, 79, 0.2); /* Multiple text-shadow layers for intensified glow */
+}
 nav ul li a:hover::after {
-    width:100%;
-  }
+  width:100%;
+}
 
-  .face-image {
-    position: absolute;
-    top: 50%; /* Adjust the top position as needed to center the image vertically */
-    left: 80%; /* Reset the left value to its default */
-     /* Increase the right position to move the image more to the right */
-    transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
-    max-width: 70%; /* Adjust the size of the image as needed */
-    max-height: 70%;
-    z-index: 2; /* Make sure the image is above the video */
-  }
-  
-  .header-text {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2; /* Set a higher z-index to make sure it appears above .face-image */
-  }
+.face-image {
+  position: absolute;
+  top: 50%; /* Adjust the top position as needed to center the image vertically */
+  left: 80%; /* Reset the left value to its default */
+   /* Increase the right position to move the image more to the right */
+  transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
+  max-width: 70%; /* Adjust the size of the image as needed */
+  max-height: 70%;
+  z-index: 2; /* Make sure the image is above the video */
+}
 
-  .header-text p {
-    text-align: left;
-    font-size: 30px; /* Adjust the font size as needed */
-    margin-bottom: 30px; /* Optional: Add some spacing between <p> and <h1> */
-  }
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Set a higher z-index to make sure it appears above .face-image */
+}
 
-  .header-text h1 {
-    font-size: 80px; /* Adjust the font size as needed */
-  }
+.header-text p {
+  text-align: left;
+  font-size: 30px; /* Adjust the font size as needed */
+  margin-bottom: 30px; /* Optional: Add some spacing between <p> and <h1> */
+}
 
-  .header-text h1 span{
-    color:rgb(3, 181, 245);
-  }
+.header-text h1 {
+  font-size: 80px; /* Adjust the font size as needed */
+}
+
+.header-text h1 span{
+  color:rgb(3, 181, 245);
+}
 
 /*-------------------------------------about me styling---------------------------------*/
 
 .sub-title{
-  font-size: 60px;
-  font-weight: 2000;
-  color:#afefff;
-  padding: 40px;
-  padding-top: 100px;
-  font-family: 'Montserrat', sans-serif;
+font-size: 60px;
+font-weight: 2000;
+color:#afefff;
+padding: 40px;
+padding-top: 100px;
+font-family: 'Montserrat', sans-serif;
 
 }
 
 .row{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 /* Your existing CSS styles here */
 
 /* Adjust the size of the image and set a maximum width */
 .about-col-1 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4000px;
+max-width: 100%;
+height: auto;
+border-radius: 4000px;
 }
 
 /* Adjust the layout of about-col-1 and about-col-2 */
 .about-col-1, .about-col-2 {
-  flex: 1;
- 
+flex: 1;
+
 }
 .about-col-2 {
-  margin-left: 40px; /* Adjust the value as needed */
-  padding-left: 200px;
-  font-family: 'Montserrat', sans-serif;
+margin-left: 40px; /* Adjust the value as needed */
+padding-left: 200px;
+font-family: 'Montserrat', sans-serif;
 }
 .about-col-2 h1 {
-  font-size: 50px;
-  
+font-size: 50px;
+
 }
- /* The flex: 1; rule is applied to both .about-col-1 and .about-col-2. This means that both element
-  s will take up equal space w
-  ithin their parent container */
+/* The flex: 1; rule is applied to both .about-col-1 and .about-col-2. This means that both element
+s will take up equal space w
+ithin their parent container */
 
 @media screen and (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
+.row {
+  flex-direction: column;
+}
 }
 
 /* ----p tag in about col-2----*/
 .about-col-2 p {
-  color: #c1c1c1; /* Light whitish grey color */
-  font-size: 18px; /* Adjust the font size as needed */
-  padding: 20px;
-  padding-right : 100px;
+color: #c1c1c1; /* Light whitish grey color */
+font-size: 18px; /* Adjust the font size as needed */
+padding: 20px;
+padding-right : 100px;
 }
 
 .tab-titles{
-  display: flex;
-  margin: 20px 0 40px;
+display: flex;
+margin: 20px 0 40px;
 }
 .tab-links{
-  margin-right:50px;
-  font-size:18px;
-  font-weight: 600;
-  cursor:pointer;
-  position:relative;
+margin-right:50px;
+font-size:18px;
+font-weight: 600;
+cursor:pointer;
+position:relative;
 }
 
 .tab-links::after{
-  content:'';
-  width:0;
-  height: 3px;
-  background:#afefff;
-  position:absolute;
-  left:0;
-  bottom:-8px;
-  transition:0.5s;
+content:'';
+width:0;
+height: 3px;
+background:#afefff;
+position:absolute;
+left:0;
+bottom:-8px;
+transition:0.5s;
 
 }
 .tab-links.active-link::after{
-  width:70%;
+width:70%;
 }
 .tab-contents ul {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .tab-contents ul li {
-  list-style-type: none;
-  color: #cdcaca;
-  margin: 20px 0; /* Add margin to create a gap between the span and li text */
-  padding-left: 20px; /* Add padding to the left to align li text with span text */
+list-style-type: none;
+color: #cdcaca;
+margin: 20px 0; /* Add margin to create a gap between the span and li text */
+padding-left: 20px; /* Add padding to the left to align li text with span text */
 }
 
 .tab-contents ul li span {
-  color: #70d6ff;
-  padding-bottom: 40px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 20px;
-  font-weight: 800;
+color: #70d6ff;
+padding-bottom: 40px;
+font-family: 'Montserrat Alternates', sans-serif;
+font-size: 20px;
+font-weight: 800;
 
 }
 .tab-contents{
-  display: none;
+display: none;
 }
 .tab-contents.active-tab{
-   display: block;
+ display: block;
 
 }
 .tab-contents-container {
-  height: 400px; /* You can adjust the height as needed */
-  overflow-y: hidden; /* Hide vertical scrollbar if the content exceeds the fixed height */
+height: 400px; /* You can adjust the height as needed */
+overflow-y: hidden; /* Hide vertical scrollbar if the content exceeds the fixed height */
 }
 
 .tab-links {
-  position: relative; /* To create a stacking context */
-  cursor: pointer;
-  transition: color 0.3s ease; /* Adding transition effect on color change */
+position: relative; /* To create a stacking context */
+cursor: pointer;
+transition: color 0.3s ease; /* Adding transition effect on color change */
 }
 
 /* Hover styles for the tab links */
 .tab-links:hover {
-  transform: scale(1.1); /* Scale the tab link to 110% when hovering */
-  text-shadow: 0 0 10px rgb(255, 2, 2); /* Add a glowing effect on hover */
-  transition: transform 0.3s ease,text-shadow 0.1s ease; /* Smooth transition for the glow effect */
+transform: scale(1.1); /* Scale the tab link to 110% when hovering */
+text-shadow: 0 0 10px rgb(255, 2, 2); /* Add a glowing effect on hover */
+transition: transform 0.3s ease,text-shadow 0.1s ease; /* Smooth transition for the glow effect */
 }
 
 /* ----------------------services------------------------------ */
 
 #services {
-  padding:30px 0;
+padding:30px 0;
 
 }
 
 .services-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap:40px;
-  margin-top: 50px;
-  padding-top: 70px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top: 50px;
+padding-top: 70px;
+padding-left: 60px;
+padding-right: 60px;
+padding-bottom: 50px;
 
 }
 .services-list div {
-  background: #292929;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  padding:  30px;
-  transition: background 0.5s,transform 0.5s;
+background: #292929;
+padding: 40px;
+font-size: 13px;
+font-weight: 300;
+border-radius: 10px;
+padding:  30px;
+transition: background 0.5s,transform 0.5s;
 }
 
 .services-list div i{
-  font-size: 50px;
-  margin-bottom: 30px;
+font-size: 50px;
+margin-bottom: 30px;
 }
 .services-list div h2{
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-  color: #70d6ff;
+font-size: 30px;
+font-weight: 500;
+margin-bottom: 15px;
+color: #70d6ff;
 }
 .services-list div a{
-  text-decoration: none;
-  color:rgb(0, 186, 254);
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
+text-decoration: none;
+color:rgb(0, 186, 254);
+font-size: 12px;
+margin-top: 20px;
+display: inline-block;
 }
 .services-list div p{
-  font-size: 16px;
+font-size: 16px;
 }
 .services-list div:hover{
-  background: #ff004f;
-  transform:translateY(-10px);
+background: #ff004f;
+transform:translateY(-10px);
 }
 
 .services-list div:hover a {
-  color: white; /* Change the text color to white on hover */
+color: white; /* Change the text color to white on hover */
 }
 .services-list div:hover h2 {
-  color: white; /* Change the text color to white on hover */
+color: white; /* Change the text color to white on hover */
 }
 
 /* -------------------------this is portfolio------------------------------------- */
 
 #portfolio{
-  padding: 50px 0;
+padding: 50px 0;
 }
 
 .work-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap:40px;
-  margin-top: 50px;
-  padding-top: 70px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top: 50px;
+padding-top: 70px;
+padding-left: 60px;
+padding-right: 60px;
+padding-bottom: 50px;
 }
 
 .work{
-  border-radius: 10px;
-  position:relative;
-  overflow:hidden;
+border-radius: 10px;
+position:relative;
+overflow:hidden;
 }
 
 .work img{
-  width: 100%;
-  border-radius: 15px;
-  display: block;
-  transition: transform 0.5s;
+width: 100%;
+border-radius: 15px;
+display: block;
+transition: transform 0.5s;
 }
 .layer{
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-  border-radius: 10px;
-  position:absolute;
-  left:0;
-  bottom:0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px ;
-  text-align: center;
-  font-size: 16px;
-  transition: height 0.5s;
- 
+width: 100%;
+height: 0;
+background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+border-radius: 10px;
+position:absolute;
+left:0;
+bottom:0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px ;
+text-align: center;
+font-size: 16px;
+transition: height 0.5s;
+
 }
 
 .layer h3{
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 20px;
+font-weight: 700;
+font-size: 18px;
+margin-bottom: 20px;
 }
 
 .layer a{
-  margin-top:20px;
-  color:#ff004f;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: #fff;
-  width:60px;
-  height:60px;
-  border-radius: 50%;
-  text-align: center;
+margin-top:20px;
+color:#ff004f;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background: #fff;
+width:60px;
+height:60px;
+border-radius: 50%;
+text-align: center;
+display: inline-block;
+}
+.layer a i {
   display: inline-block;
-  }
-  .layer a i {
-    display: inline-block;
-    margin-right: 10px; /* Add some space between the icons */
-    vertical-align: middle;
-  }
-  .work:hover img{
-    transform: scale(1.1);
-  }
-  .work:hover .layer{
-    height: 100%;
-  }
+  margin-right: 10px; /* Add some space between the icons */
+  vertical-align: middle;
+}
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
 
-  /* -------------------------this is contact part---------------------------------- */
-  
-  .contact-left{
-    flex-basis: 35%;
-    padding-left: 40px;
-    text-align: left;
-  }
-  .contact-right{
-    flex-basis: 60%;
-    padding-right: 120px;
-  }
-  .contact-left p{
-    margin-top: 30px;
-  }
-  .contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 30px;
-    padding-left: 50px;
-    padding-top: 15px;
+/* -------------------------this is contact part---------------------------------- */
 
-  }
-  .contact-left p span{
-    font-size: 20px;
-  }
-  .social-icons a{
-    text-decoration: none;
-    font-size: 50px;
-    margin-right: 15px;
-    display: inline-block;
-    transition: transform 0.5s;
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  .social-icons a:hover{
-    transform: translateY(-5px);
-    transform: scale(1.2); 
-  }
-  .btn{
-    display: block;
-    margin: 50px  auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
+.contact-left{
+  flex-basis: 35%;
+  padding-left: 40px;
+  text-align: left;
+}
+.contact-right{
+  flex-basis: 60%;
+  padding-right: 120px;
+}
+.contact-left p{
+  margin-top: 30px;
+}
+.contact-left p i{
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 30px;
+  padding-left: 50px;
+  padding-top: 15px;
+
+}
+.contact-left p span{
+  font-size: 20px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 50px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: transform 0.5s;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.social-icons a:hover{
+  transform: translateY(-5px);
+  transform: scale(1.2); 
+}
+.btn{
+  display: block;
+  margin: 50px  auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
 }
 .btn:hover{
-  background: #ff004f;
+background: #ff004f;
 
 }
 .contact-left .btn {
-  margin-left: 50px; /* Add the desired left margin to the button */
+margin-left: 50px; /* Add the desired left margin to the button */
 }
 
 .btn.btn2{
-  display: inline-block;
-  background:#ff004f;
+display: inline-block;
+background:#ff004f;
 }
 .contact-right form{
-  width: 100%;
-  margin-top: 250px;
-  margin-right: 100px;
+width: 100%;
+margin-top: 250px;
+margin-right: 100px;
 }
 form input,form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #272626;
-  padding: 15px;
-  margin: 15px 0  ;
-  color: #cdcaca;
-  font-size: 18px;
-  border-radius: 8px;
+width: 100%;
+border: 0;
+outline: none;
+background: #272626;
+padding: 15px;
+margin: 15px 0  ;
+color: #cdcaca;
+font-size: 18px;
+border-radius: 8px;
 
 }
 form .btn2{
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 20px;
-  cursor: pointer;
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
 }
 .copyright{
-  width: 100%;
-  text-align: center;
-  padding: 25px 0;
-  background: #272626;
-  font-weight: 300;
-  margin-top: 20px;
+width: 100%;
+text-align: center;
+padding: 25px 0;
+background: #272626;
+font-weight: 300;
+margin-top: 20px;
 }
 
 /* -------------------------css for small screens----------------------------------- */
@@ -492,61 +492,61 @@ form .btn2{
 
 /* For screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .face-image {
-    max-width: 70%;
-    max-height: 70%;
-    margin-top: 30px;
-  }
+.face-image {
+  max-width: 70%;
+  max-height: 70%;
+  margin-top: 30px;
+}
 
-  .header-text p {
-    font-size: 20px;
-  }
+.header-text p {
+  font-size: 20px;
+}
 
-  .header-text h1 {
-    font-size: 40px;
-    text-align: center;
-  }
+.header-text h1 {
+  font-size: 40px;
+  text-align: center;
+}
 }
 /* By applying these CSS changes using media queries, the header section will become responsive and adapt to different screen sizes without modifying the HTML structure. */
 
 /* ----------scroll part------------------------ */
 
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 /* ------------scroll reveal----------------------- */
 /* Scroll reveal animations */
 /* Add transition property for smooth animations */
 .reveal-left,
 .reveal-right {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 1s ease, transform 1s ease;
+opacity: 0;
+transform: translateX(0);
+transition: opacity 1s ease, transform 1s ease;
 }
 
 /* Apply the reveal animation when the element is in view */
 .reveal-left.fadeIn.left,
 .reveal-right.fadeIn.right {
-  opacity: 1;
-  transform: translateX(0);
+opacity: 1;
+transform: translateX(0);
 }
 
 /* Move the element off the screen for the initial state */
 .reveal-left.left,
 .reveal-right.right {
-  opacity: 0;
-  transform: translateX(-100px);
+opacity: 0;
+transform: translateX(-100px);
 }
 
 #msg{
-  color: rgb(4, 251, 169);
-  margin-top: -10px;
-  display: block;
-  font-size: 18px;
+color: rgb(4, 251, 169);
+margin-top: -10px;
+display: block;
+font-size: 18px;
 }
